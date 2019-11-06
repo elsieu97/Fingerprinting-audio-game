@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightsteelblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightsteelblue;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: aliceblue;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to my Game</h1>
+  <p>Fingerprinting audio game</p>
+</div>
+
+<div class="topnav">
+  <a href="GameInfo.html">GameInfo</a>
+  <a href="Levels.html">Levels</a>
+  <a href="Game.html">Game</a>
+  <a href="Index.html" style="float:right">Index</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Game info</h2>
+      <h5>September 21, 2019</h5>
+      <div class="fakeimg" style="height:200px;">
+      <p><strong>Options:</strong><br><br>The game has a total of 10 levels. The user 
+          has the option to go in between levels and play in whichever difficulty 
+          they desire. Which is what the "Level" tab is for. There is then a "Game" 
+          tab in which the user can play straight meaning that in order to get 
+          to the next level they have to pass the previous level. </p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Point of the game</h2>
+      <h5>September 29, 2019</h5>
+      <div class="fakeimg" style="height:200px;">
+          <p><strong>The point of the game:</strong></p>
+      <p> Is to test whether a person is better at recognizing certain speech 
+          cues in a sentence with a high amount of background noise. Encourage 
+          users to pay attention to pronunciation of certain words in a sentence 
+          or phrase. The game gathers data and helps identify what sentence or 
+          phrase was easiest said. It helps round up what words are easier to 
+          hear. </p>
+      </div>
+    </div>
+       <div class="card">
+      <h2>How to play</h2>
+      <h5>October 6, 2019</h5>
+      <div class="fakeimg" style="height:200px;">
+          <p><strong>How to play:</strong></p>
+      <p> The game automatically starts it will show the points you can get 
+          above the game screen for each level as well as your current score. 
+          If answered incorrectly it will deduct 100 points, and restart the 
+          level. If answered correctly 200 points will be added. The user must 
+          listen and try to decipher the sentence or phrase being said. To 
+          answer the user types in the answer into the box below the play 
+          screen and clicks submit. </p>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Game image</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>About game image above</p>
+    </div>
+    <div class="card">
+      <h3>Popular levels</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Blank</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
