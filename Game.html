@@ -65,10 +65,10 @@ label {
 
 /* Right column */
 .rightcolumn {
-  float: left;
+  float: right;
   width: 25%;
   background-color: lightsteelblue;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 /* Fake image */
@@ -81,8 +81,8 @@ label {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 100px;
-  margin-top: 50px;
+  padding: 60px;
+  margin-top: 40px;
 }
 
 /* Clear floats after the columns */
@@ -128,54 +128,69 @@ label {
   <a href="GameInfo.html">GameInfo</a>
   <a href="Levels.html">Levels</a>
   <a href="Game.html">Game</a>
-  <a href="index.html" style="float:right">Index</a>
+   <a href="highscore.html">Highscore</a>
+    <a href="Audio.html">Audio</a>
+  <a href="Index.html" style="float:right">Index</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Level 1</h2>
+      <h2>Levels</h2>
       <h5>September 21, 2019</h5>
       <div class="fakeimg">
       <p>Listen to audio then type in what you think is the answer. <br>Good luck!</p>
+      <p id="instructions" style="display: none;">Loading Files...</p>
       <h4 class="intro-text text-center" style="display: initial;">
-               <strong>Points: </strong>
-                 <span id="points">100</span>
-                <strong>Score: </strong>
-                <span id="score">0</span>
+<strong>Points: </strong>
+                 <span id="bubble_points">100</span>
+                <strong>Total: </strong>
+                <span id="total_score">0</span>
           </h4>
-      <script type="text/javascript">
-        var audio = 'have-a-good-weekend.wav';
-	var Background = 'people-talking-2.mp3';
-	var name = 'user';
-	var server = '';
-</script>
-      <div id="stage" class="division" align="center">
-         <canvas id="canvas" width="388" height="312" style="display: initial;"></canvas> 
-				<script type="text/javascript" src="score.js"></script>
-                                <script type="text/javascript" src="main.js"></script>
-                                <script type="text/javascript" src="videoToaudio.js"></script>
-                                <script type="text/javascript" src="audio.js"></script>
-                                <script type="text/javascript" src="answer.js"></script>
+      <div id="stage" class="division" align="center">         
+
+         <audio id='audio1' src="have-a-good-weekend.wav"></audio>
+         <audio id='audio2' src="people-talking-2.mp3" ></audio>
+ <video id="videoInHTML" width="320" height="240" controls="controls">
+<source src="background.mp4" type="video/mp4" />
+ </video>
+    <form>
+    <input type="button" value="PlaySoundAndVideo" onClick="PlaySoundAndVideo('videoInHTML'),PlaySoundAndVideo('audio2')">
+   
+<button id='pauseaudio' onclick='pauseAudio()'>Pause Video</input>
+    </form>
+         </div>
+         
+          <!--Javascript files for audio--> 
+                                <script type="text/javascript" src="audio_1.js"></script>
+				<script type="text/javascript" src="highscore.js"></script>
+                                <script type="text/javascript" src="choices.js"></script>
+                                <script type="text/javascript" src="score.js"></script>
+                                
 			</div>
-      <script>
-			    Time(startGame, 150);
-			</script>
      <!--Answer box--> 
  <form>
   <div>
-    <label for="answer">Answer: </label>
-    <input type="text" id="answer" name="answer"
+    <label for="file">Answer: </label>
+    <input type="text" id="file" name="file"
            placeholder="Type in what was said">
   </div>
   <div>
-    <button>Submit</button>
+    <button id='answerInput' onclick='answerInput'>Submit</button>
   </div>
  </form>
+     
+     
+     
       </div>
     </div>
+      
+      
+      
    <!--Closing bracket for left column-->   
-  </div> 
+ 
+    
+    
   <div class="rightcolumn">
     <div class="card">
       <h2>Game image</h2>
