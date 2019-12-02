@@ -9,7 +9,7 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: lightsteelblue;
+  background: cadetblue;
 }
 
 /* Header/Blog Title */
@@ -65,15 +65,15 @@ label {
 
 /* Right column */
 .rightcolumn {
-  float: left;
+  float: right;
   width: 25%;
-  background-color: lightsteelblue;
+  background-color: cadetblue;
   padding-left: 50px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: aliceblue;
+  background-color: lightblue;
   width: 100%;
   padding: 20px;
 }
@@ -81,7 +81,7 @@ label {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 100px;
+  padding: 40px;
   margin-top: 50px;
 }
 
@@ -91,12 +91,17 @@ label {
   display: table;
   clear: both;
 }
-
+.previous{
+    float: left;
+}
+.next{
+    float: right;
+}
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: aliceblue;
+  background: lightblue;
   margin-top: 20px;
 }
 
@@ -124,58 +129,77 @@ label {
   <p>Below is the game.</p>
 </div>
 
+
 <div class="topnav">
   <a href="GameInfo.html">GameInfo</a>
   <a href="Levels.html">Levels</a>
   <a href="Game.html">Game</a>
-  <a href="index.html" style="float:right">Index</a>
+   <a href="highscore.html">Highscore</a>
+    <a href="Audio.html">Audio</a>
+  <a href="Index.html" style="float:right">Index</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
       <h2>Level 3</h2>
-      <h5>October 6, 2019</h5>
+      <h5>September 21, 2019</h5>
       <div class="fakeimg">
-      <p>Listen to audio then type in what you think is the answer. <br>Good luck!</p>
+      <p>Click the Play Video button.<br>Listen to audio then type in what you think is the answer. <br>Good luck!</p>
       <h4 class="intro-text text-center" style="display: initial;">
                <strong>Points: </strong>
                  <span id="points">100</span>
                 <strong>Score: </strong>
                 <span id="score">0</span>
           </h4>
-      <script type="text/javascript">
-        var audio = 'i-cant-believe-i-let-you.wav';
-	var Background = 'people-talking-2.mp3';
-	var name = 'user';
-	var server = '';
-</script>
       <div id="stage" class="division" align="center">
-         <canvas id="canvas" width="388" height="312" style="display: initial;"></canvas> 
-				<script type="text/javascript" src="score.js"></script>
-                                <script type="text/javascript" src="main.js"></script>
-                                <script type="text/javascript" src="videoToaudio.js"></script>
-                                <script type="text/javascript" src="Sound.js"></script>
-                                <script type="text/javascript" src="answer.js"></script>
+   <audio id='audio1' src="maybe-next-time-huh.wav"></audio>
+         <audio id='audio2' src="people-talking-2.mp3" ></audio>
+ <video id="videoInHTML" width="320" height="240" controls="controls">
+<source src="background.mp4" type="video/mp4" />
+ </video>
+    <form>
+    <input type="button" value="Play Video" onClick="PlaySoundAndVideo('videoInHTML'),PlaySoundAndVideo('audio2')">
+   
+<button id='pauseaudio' onclick='pauseAudio()'>Pause Video</input>
+    </form>
+         </div>
+         
+          <!--Javascript files for audio--> 
+                                <script type="text/javascript" src="audio_1.js"></script>
+                                <script type="text/javascript" src="levelUp.js"></script>
+				<script type="text/javascript" src="highscore.js"></script>
+                                <script type="text/javascript" src="choices.js"></script>
+                                <script type="text/javascript" src="score.js"></script>
+                                <script type="text/javascript" src="score2.js"></script>
+                                <script type="text/javascript" src="highscore2.js"></script>
 			</div>
-      <script>
-			    Time(startGame, 150);
-			</script>
      <!--Answer box--> 
  <form>
   <div>
-    <label for="answer">Answer: </label>
-    <input type="text" id="answer" name="answer"
+    <label for="choices">Answer: </label>
+    <input type="text" id="choices" name="choices"
            placeholder="Type in what was said">
   </div>
   <div>
     <button>Submit</button>
   </div>
+     
+     
+     <div>
+         <p> <br> </p>
+         </div>
+     <div> 
+         <a href="level2.html" class="previous">Level 2</a>
+         <a href="Level4.html" class="next">Level 4</a>
+     </div>
+     
+     
  </form>
       </div>
     </div>
    <!--Closing bracket for left column-->   
-  </div> 
+  
   <div class="rightcolumn">
     <div class="card">
       <h2>Game image</h2>
