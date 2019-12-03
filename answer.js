@@ -6,9 +6,23 @@ var correct;
 var choose;
 var correctA;
 var div = document.getElementById('answer');
+document.getElementById('answer').onchange = function(){
+  var file = this.files[0];
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){
+    // Entire file
+    console.log(this.result);
+    // By lines
+    var lines = this.result.split('\n');
+    for(var line = 0; line < lines.length; line++){
+      console.log(lines[line]);
+    }
+  };
+  reader.readAsText(file);
+};
 function startAnswers(){
     if(answer){
-	correctA = answer[0];	//Correct choice is the first one
+	correctA = answer[0];
 	document.getElementById('answer').innerHTML = "";
 	Answer = [];
 	for(var i = 0;i<answer.length;i++){
