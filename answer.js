@@ -28,7 +28,7 @@ function startAnswers(){
 	for(var i = 0;i<answer.length;i++){
             Answer.push(new answerInput(answer[i], i));}
             choose = document.getElementsByClassName("answerInput \n\
-            answerOptions answerOptions-choice");
+            answerOptions answerOptions-answer");
             waitingAnswers = false;}}
 class answerInput{
 	constructor(string, i){
