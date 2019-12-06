@@ -1,13 +1,12 @@
-response: document.querySelector('#response')
 
-start(quiz){
+function start(quiz){
     this.score = 0;
     this.questions = [...quiz];
     view.setup();
     this.ask();
 }
 
-ask(name){
+function ask(name){
  if(this.questions.length > 0){
      this.question = this.questions.pop();
      const question = What is $(this.question.name)'s real name?';
@@ -21,7 +20,7 @@ ask(name){
 view.response.addEventListener('submit', (event) => game.check(event), false);
 view.hide(view.response);
 
-check(event){
+function check(event){
     event.preventDefault();
     const response = view.response.answer.value;
     const answer = this.question.realName;
@@ -36,17 +35,17 @@ check(event){
     this.ask();
 },
         
-resetForm(){
+function resetForm(){
     this.response.answer.value = '';
     this.response.answer.focus();
 }
- teardown(){
+ function teardown(){
      this.hide(this.question);
      this.hide(this.response);
      this.show(this.start);
  }
  
- gameOver(){
+ function gameOver(){
      view.render(view.info, 'Game Over, you scored $(this.score) point$(this.score !== 1 ? 's' : '')');
      view.teardown();
  }
