@@ -175,15 +175,24 @@ label {
                                 <script type="text/javascript" src="highscore2.js"></script>
 	                        <script type="text/javascript" src="reader.js"></script>
 			</div>
+	    <script>
+		   function question() {
+		var value = document.getElementById("question").value;
+		    if (value == 'no thats not going to do it') {
+    			 window.alert("correct!");
+ 		 } else {
+    		 window.alert("try again');}} 
+	    </script>
+	    
      <!--Answer box--> 
  <form>
   <div>
     <label for="answers">Answer: </label>
-    <input type="text" id="answers" name="answers"
+    <input type="text" id="question" name="answers"
            placeholder="Type in what was said">
   </div>
   <div>
-    <button>Submit</button>
+    <button onclick=question()>Submit</button>
   </div>
         
  </form>
