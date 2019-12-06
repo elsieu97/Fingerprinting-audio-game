@@ -26,4 +26,9 @@ storageRef.child('audio2/file.txt').getDownloadURL().then(function(url) {
 }).catch(function(error) {
   // Handle any errors
 });
+var answer = firebase.auth().currentUser.ans;
+return firebase.database().ref('/answer/' + answer).once('value').then(function(snapshot) {
+  var answers = (snapshot.val() && snapshot.val().answers) || 'I dont know';
+  // ...
+});
 
