@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyD0ZmEkJ-chGAG-BzqwNfmgaKkPyGl_DqU",
-    authDomain: "read-24026.firebaseapp.com",
-    databaseURL: "https://read-24026.firebaseio.com",
-    projectId: "read-24026",
-    storageBucket: "read-24026.appspot.com",
-    messagingSenderId: "1080786106101",
-    appId: "1:1080786106101:web:ddf656bfbd8d830a93f7bc",
-    measurementId: "G-Z9DZ0389XQ"
+    apiKey: "AIzaSyBwYlI00S8-ID6ukjrlqh6a9asI8Q3jWTg",
+    authDomain: "audio2-692f6.firebaseapp.com",
+    databaseURL: "https://audio2-692f6.firebaseio.com",
+    projectId: "audio2-692f6",
+    storageBucket: "audio2-692f6.appspot.com",
+    messagingSenderId: "780645088371",
+    appId: "1:780645088371:web:16849665c20ea51ce03e06",
+    measurementId: "G-NBWHV2BS9H"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
