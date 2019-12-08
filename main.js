@@ -24,7 +24,7 @@ function submitForm(e){
     e.preventDefault();
     
     //get values
-    var question- getInputVal('question');
+    var question= getInputVal('question');
     // save message
     saveMessage(question);
 }
