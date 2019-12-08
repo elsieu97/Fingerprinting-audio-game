@@ -4,5 +4,5 @@ document.getElementById('question').addEventListener('submit', submitForm);
 function submitForm(e){
     e.preventDefault();
     
-    console.log();
+    console.log(123);
 }
