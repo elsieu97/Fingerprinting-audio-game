@@ -171,30 +171,19 @@ label {
 				<script type="text/javascript" src="highscore.js"></script>
                                 <script type="text/javascript" src="answer.js"></script>
                                 <script type="text/javascript" src="score.js"></script>
-                                <script type="text/javascript" src="answer2.js"></script>
+                                <script type="text/javascript" src="main.js"></script>
                                 <script type="text/javascript" src="highscore2.js"></script>
 	                        <script type="text/javascript" src="reader.js"></script>
 			</div>
-	    <script>
-		   function question() {
-		var text = document.getElementById("question").value;
-			   var word ="no thats not going to do it";
-		if (text == word) {
-    			 document.location.href ="Level2.html";
- 		 } else {
-    		 document.write("Try again");
-		 }} 
-	    </script>
-	    
      <!--Answer box--> 
- <form>
+ <form id="info">
   <div>
     <label>Answer: </label>
     <input type="text" id="question" name= "question"
            placeholder="Type in what was said">
   </div>
   <div>
-    <button onclick="question()">Submit</button>
+    <button type="submit">Submit</button>
   </div>
         
  </form>
