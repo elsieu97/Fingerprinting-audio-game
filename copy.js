@@ -3,7 +3,7 @@ function every(e){
   e.preventDefault();
 var answers = "no thats not gonna do it";
 var question = document.getElementById('question').value.toLowerCase();
-var match = answers.indexOf(function(r){
+var match = answers.some(function(r){
   return question === r;
 });
     var score=100;
