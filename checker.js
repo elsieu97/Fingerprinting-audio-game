@@ -4,9 +4,8 @@ var score = document.getElementById("score").value;
 var points = document.getElementById("points").value;
 function every(){
 for(var i = 0; i < answers.length; i++){
-  if (input == answers[i]){
-    score=score+200;
-    points=points+200;
+  if (!input == answers[i]){
+alert("congrats");
   }else{
-    score=score-200;
-  points=-points-200;}}}
+alert("wrong");
+      }}}
