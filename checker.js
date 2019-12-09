@@ -3,7 +3,7 @@ var input = document.getElementById("question").value.toLowerCase();
 var score = document.getElementById("score").value;
 var points = document.getElementById("points").value;
 function every(){
-var match = answers.some(function(r){
+var match = answers.indexOf(function(r){
   return question === r;
 });
   if (match){
