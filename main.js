@@ -27,8 +27,21 @@ function submitForm(e){
     
     //get values
     var question= getInputVal('question');
+  
     // save message
     saveMessage(question);
+  
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+  
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('info').reset();
+  
 }
 
 //function to get values
