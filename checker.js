@@ -5,4 +5,4 @@ for(var i = 0; i < answers.length; i++){
   if (input == answers[i]){
     document.write("congrats");
   }else{
-    document.write("wrong");}}}}
+    document.write("wrong");}}}
