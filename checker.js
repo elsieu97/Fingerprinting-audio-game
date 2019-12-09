@@ -8,3 +8,11 @@ for(var i = 0; i < answers.length; i++){
   }
   if(result == false){
     alert("wrong");}}
+  
+  // Show alert
+  document.querySelector('.alert2').style.display = 'block';
+  
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert2').style.display = 'none';
+  },3000);
