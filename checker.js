@@ -3,9 +3,12 @@ var input = document.getElementById("question").value.toLowerCase();
 var score = document.getElementById("score").value;
 var points = document.getElementById("points").value;
 function every(){
-for(var i = 0; i < answers.length; i++){
-  if (!input == answers[i]){
+var match = answers.some(function(r){
+  return question === r;
+});
+  if (match){
 alert("congrats");
   }else{
 alert("wrong");
-      }}}
+      }
+}
