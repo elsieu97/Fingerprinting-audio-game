@@ -11,6 +11,8 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+ firebase.database(firebaseConfig);
+firebase.auth(firebaseConfig);
 
 //reference messages collection
 var messageRef = firebase.database().ref('messages');
@@ -35,7 +37,7 @@ function getInputVal(id){
 }
 
 //save message to firebase
-function savemessage(question){
+function saveMessage(question){
  var newMessageRef=messagesRef.push();
     newMessageRef.set({
         question: question
