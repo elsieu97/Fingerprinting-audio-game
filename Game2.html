@@ -212,6 +212,13 @@ label {
   <a href="https://www.pacdv.com/sounds/people_sounds.html">Audio</a><br>
   <a href="https://www.youtube.com/watch?v=P3iGjQT719Y&t=4s">Video</a>
 </div>
+	<script>
+		var queryString = decodeURIComponent(window.location.search);//parsing
+		queryString = queryString.substring(1);
+		var queries = queryString.split("&");
+		for (var i=0; i< queries.length; i++){
+			document.write(queries[i]+ "<br>');}
+	</script>
 <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
