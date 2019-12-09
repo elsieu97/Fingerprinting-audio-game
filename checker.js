@@ -3,6 +3,6 @@ var answers = ["have a good weekend", "you wanna come in", " you know what im ta
 var input = document.getElementById("question").value.toLowerCase();
 for(var i = 0; i < answers.length; i++){
   if (input == answers[i]){
-    documnet.write("congrats");
+    document.write("congrats");
   }else{
     document.write("wrong");}}}}
