@@ -4,9 +4,9 @@ var result = false;
 var input = document.getElementById("question").value.toLowerCase();
 for(var i = 0; i < answers.length; i++){
   if (input === answers[i].innerhtml){
-    alert("congrats");
+    alert2("congrats");
   }
   if(result == false){
-    alert("wrong");
+    alert2("wrong");
 }
 }
