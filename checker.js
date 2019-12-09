@@ -9,6 +9,7 @@ var match = answers.indexOf(function(r){
 });
   if (match){
 alert("congrats");
+    
   }else{
 alert("wrong");
       }
