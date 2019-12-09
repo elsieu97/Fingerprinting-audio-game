@@ -3,8 +3,8 @@ function every(e){
   e.preventDefault();
 var answers = "no thats not gonna do it";
 var question = document.getElementById('question').value.toLowerCase();
-  var question2 =document.getElementById('question2').value.toLowerCase();
-  question2.value=question.value; 
+var score = document.getElementById('score').value;
+var points = document.getElementById('points').value;
 var match = answers.some(function(r){
   return question === r;
 });
@@ -23,4 +23,7 @@ points -= 150;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
       }
+  localStorage.setItem("textvalue", score);
+  localStorage.setItem("textvalue", points);
+  return false;
 }
