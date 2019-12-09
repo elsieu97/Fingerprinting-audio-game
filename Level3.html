@@ -169,7 +169,8 @@ label {
  <form id="info">
   <div>
     <label>Answer: </label>
-    <input type="text" id= "question" name="question" placeholder="Type in what was said">
+    <input type="text" id= "question" name="question" placeholder="Type in what was said" onkeyup="sync()">
+	  <input type="text id="question2" name="question2"/>
   </div>
  <div>
     <button type="submit" onclick="every(event);">Submit</button>
