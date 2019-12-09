@@ -5,6 +5,6 @@ var points = document.getElementById("points").value;
 function every(){
 for(var i = 0; i < answers.length; i++){
   if (input == answers[i]){
-    document.write("congrats");
+    alert("congrats");
   }else{
-    document.write("wrong");}}}
+    alert("wrong");}}}
