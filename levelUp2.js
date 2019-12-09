@@ -13,7 +13,6 @@ score += 200;
 points += 200;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
-    window.location.replace("Game2.html");
   }else{
 alert("wrong");
 score -= 200;
