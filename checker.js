@@ -7,6 +7,4 @@ for(var i = 0; i < answers.length; i++){
     alert("congrats");
   }
   if(result == false){
-    alert("wrong");
-}
-}
+    alert("wrong");}}
