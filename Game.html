@@ -215,6 +215,12 @@ label {
   <a href="https://www.pacdv.com/sounds/people_sounds.html">Audio</a><br>
   <a href="https://www.youtube.com/watch?v=P3iGjQT719Y&t=4s">Video</a>
 </div>
+  <script>
+    var score = document.getElementById('score').value;
+    var points = document.getElementById('points').value;
+    var queryString = "?para1="+ score + "&para2=" +points;
+    window.location.href ="Game2.html"+ queryString 
+  </script>
 <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
