@@ -12,7 +12,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
  firebase.database();
-firebase.auth(firebaseConfig);
+firebase.auth();
 
 //reference messages collection
 var messageRef = firebase.database().ref('messages');
