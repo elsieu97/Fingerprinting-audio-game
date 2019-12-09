@@ -22,11 +22,3 @@ points -= 150;
     document.getElementById("points").innerHTML = points;
       }
 }
-function tryit(){
-  var score = document.getElementById('score').value;
-  var points = document.getElementById('points').value;
-  localStorage.setItem("textvalue", score);
-  return false;
-  localStorage.setItem("textvalue", points);
-  return false;
-}
