@@ -91,6 +91,14 @@ label {
   display: table;
   clear: both;
 }
+	.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+} 
 .previous{
     float: left;
 }
@@ -169,8 +177,8 @@ label {
  <form id="info">
   <div>
     <label>Answer: </label>
-    <input type="text" id= "question" name="question" placeholder="Type in what was said" onkeyup="sync()">
-	  <input type="text id="question2" name="question2"/>
+    <input type="text" id= "question" name="question" placeholder="Type in what was said">
+
   </div>
  <div>
     <button type="submit" onclick="every(event);">Submit</button>
