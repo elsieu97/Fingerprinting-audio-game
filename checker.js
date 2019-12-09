@@ -2,7 +2,7 @@ var answers = ["have a good weekend", "you wanna come in", " you know what im ta
 var input = document.getElementById("question").value.toLowerCase();
 function every(e){
    e.preventDefault();
-var match = answers.indexOf(function(r){
+var match = answers.some(function(r){
   return question === r;
 });
   if (match){
