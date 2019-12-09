@@ -167,7 +167,10 @@ label {
 	 <div class="alert"> Your answer has beeen sent</div>
      </form>
 
-     
+     <script>
+	     document.getElementsById("score").innerHTML=localStorage.getItem("textvalue");
+	     document.getElementsById("points").innerHTML=localStorage.getItem("textvalue");
+	    </script>
       </div>
     </div>
    <!--Closing bracket for left column-->   
