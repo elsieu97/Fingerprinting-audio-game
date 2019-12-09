@@ -3,7 +3,7 @@ var answers = ["have a good weekend", "you wanna come in", " you know what im ta
 var input = document.getElementById("question").value.toLowerCase();
 var found = answers.find(l => l.answers === input);
   if (found){
-    
-      
-      }
+    alert("Congrats!");
+      } else{
+          alert("Try again");
       });
