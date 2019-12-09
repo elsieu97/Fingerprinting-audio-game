@@ -27,7 +27,6 @@ function submitForm(e){
     var question= getInputVal('question');
     // save message
     saveMessage(question);
-  console.log(123);
 }
 
 //function to get values
