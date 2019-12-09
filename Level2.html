@@ -175,15 +175,17 @@ label {
                                 <script type="text/javascript" src="highscore2.js"></script>
 			</div>
      <!--Answer box--> 
- <form>
+ <form id="info">
   <div>
-    <label for="choices">Answer: </label>
-    <input type="text" id="choices" name="choices"
-           placeholder="Type in what was said">
+    <label>Answer: </label>
+    <input type="text" id= "question" name="question" placeholder="Type in what was said">
   </div>
-  <div>
-    <button>Submit</button>
+ <div>
+    <button type="submit" onclick="every(event);">Submit</button>
   </div>
+	 <div class="alert"> Your answer has beeen sent</div>
+	 <div class="alert2">correct</div>
+     </form>
      
      
      <div>
