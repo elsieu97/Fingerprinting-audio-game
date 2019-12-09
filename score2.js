@@ -4,6 +4,8 @@ var answers = ["have a good weekend", "you wanna come in", " you know what im ta
 var question = document.getElementById('question').value.toLowerCase();
 var score = document.getElementById('score').value;
 var points = document.getElementById('points').value;
+  var score=100;
+  var points=0;
 var match = answers.some(function(r){
   return question === r;
 });
