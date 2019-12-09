@@ -9,8 +9,11 @@ var match = answers.indexOf(function(r){
 });
   if (match){
 alert("congrats");
-    
+    score=score+200;
+    points=points+200
   }else{
 alert("wrong");
+    score=score-200;
+    points=points-200;
       }
 }
