@@ -11,7 +11,7 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
- firebase.database(firebaseConfig);
+ firebase.database();
 firebase.auth(firebaseConfig);
 
 //reference messages collection
