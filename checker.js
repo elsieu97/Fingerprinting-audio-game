@@ -4,15 +4,7 @@ var result = false;
 var input = document.getElementById("question").value.toLowerCase();
 for(var i = 0; i < answers.length; i++){
   if (input === answers[i].innerhtml){
-    alert("congrats");
+    documnet.write("congrats");
   }
   if(result == false){
-    alert("wrong");}}
-  
-  // Show alert
-  document.querySelector('.alert2').style.display = 'block';
-  
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert2').style.display = 'none';
-  },3000);
+    document.write("wrong");}}
