@@ -2,7 +2,8 @@ var answers = ["have a good weekend", "you wanna come in", " you know what im ta
 var input = document.getElementById("question").value.toLowerCase();
 var score = document.getElementById("score").value;
 var points = document.getElementById("points").value;
-function every(){
+function every(e){
+  e.preventDefault();
 var match = answers.indexOf(function(r){
   return question === r;
 });
