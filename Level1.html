@@ -175,12 +175,13 @@ label {
      <!--Answer box--> 
  <form id="info">
   <div>
-    <label for="response">Answer: </label>
-    <input type="text" name="answer" placeholder="Type in what was said">
+    <label>Answer: </label>
+    <input type="text" id= "question" name="question" placeholder="Type in what was said">
   </div>
  <div>
-    <button>Submit</button>
+    <button type="submit">Submit</button>
   </div>
+	 <div class="alert"> Your answer has beeen sent</div>
      </form>
      <div> 
          <a href="Level2.html" class="next">Level 2</a>
@@ -229,6 +230,11 @@ label {
   <a href="https://www.pacdv.com/sounds/people_sounds.html">Audio</a><br>
   <a href="https://www.youtube.com/watch?v=P3iGjQT719Y&t=4s">Video</a>
 </div>
-
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="audio_1.js"></script>
+	<script type="text/javascript" src="checker.js"></script>
 </body>
 </html>
