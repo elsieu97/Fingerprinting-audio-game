@@ -30,7 +30,7 @@ function submitForm(e){
     var name = getInputVal('name');
   
     // save message
-    saveMessage(question, name);
+    saveMessage(question, name, score);
   
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -51,11 +51,12 @@ function getInputVal(id){
 }
 
 //save message to firebase
-function saveMessage(question, name){
+function saveMessage(question, name, score){
  var newMessageRef=messageRef.push();
     newMessageRef.set({
         question: question,
-        name: name
+        name: name,
+      score: score
     });
                                     
 }
