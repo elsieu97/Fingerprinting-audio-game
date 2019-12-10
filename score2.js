@@ -17,8 +17,8 @@ points += 200;
     document.getElementById("points").innerHTML = points;
   }else{
 alert("wrong");
-score -= 172;
-points -= 140;
+score -= 100;
+points -= 100;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
       }
