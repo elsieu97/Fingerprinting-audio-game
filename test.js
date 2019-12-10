@@ -11,8 +11,8 @@ for (var i = 0, l = params.length; i < l; i++) {
          tmp = params[i].split('=');
          data[tmp[0]] = tmp[1];
     }
-    document.getElementById('score').innerHTML = data.name;
-    document.getElementById('points').innerHTML = data.name;
+    document.getElementById('score').innerHTML = data.n;
+    document.getElementById('points').innerHTML = data.n;
 }
 function encode(string) {
       var stringIsInvalid = string === undefined ||
