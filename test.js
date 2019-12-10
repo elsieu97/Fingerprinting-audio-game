@@ -14,3 +14,13 @@ for (var i = 0, l = params.length; i < l; i++) {
     document.getElementById('score').innerHTML = data.name;
     document.getElementById('points').innerHTML = data.name;
 }
+function encode(string) {
+      var stringIsInvalid = string === undefined ||
+                            typeof string !== 'string' ||
+                            string.length < 1;
+
+      if(stringIsInvalid) throw new Error('Cannot encodeURIComponent(string),'+
+                                          ' string is invalid');
+
+      return encodeURIComponent(string);
+ }
