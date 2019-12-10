@@ -23,5 +23,4 @@ points -= 150;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
       }
-   }  
-}
+}  }
