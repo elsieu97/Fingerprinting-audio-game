@@ -16,11 +16,13 @@ firebase.auth();
 
 //reference messages collection
 var messageRef = firebase.database().ref('messages');
+var messageRef = firebase.database().ref('messages2');
+
 
 
 //Listen for form submit
 document.getElementById('info').addEventListener('submit', submitForm);
-
+document.getElementById('info2').addEventListener('submit', submitForm);
 //submit question
 function submitForm(e){
     e.preventDefault();
@@ -28,10 +30,11 @@ function submitForm(e){
     //get values
     var question= getInputVal('question');
     var name = getInputVal('name');
- 
+ var question2= getInputVal('question2');
   
     // save message
-    saveMessage(question, name);
+    saveMessage(question,name);
+  saveMessage2(question2);
   
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -43,6 +46,7 @@ function submitForm(e){
 
   // Clear form
   document.getElementById('info').reset();
+  document.getElementById('info2').reset();
   
 }
 
@@ -56,8 +60,14 @@ function saveMessage(question, name){
  var newMessageRef=messageRef.push();
     newMessageRef.set({
         question: question,
-        name: name,
+        name: name
 
-    });
-                                    
+    });                                    
+}
+
+function saveMessage(question2){
+ var newMessageRef=messageRef.push
+ newMessageRef.set({
+   question2: question2
+ });
 }
