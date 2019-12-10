@@ -28,6 +28,7 @@ function submitForm(e){
     //get values
     var question= getInputVal('question');
     var name = getInputVal('name');
+   var score = getElementById('score');
   
     // save message
     saveMessage(question, name, score);
