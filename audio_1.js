@@ -10,6 +10,5 @@
     audio2.pause();
 }
 setTimeout(function(){ 
-document.getElementById("audio1").pause();
 document.getElementById("audio1").play(); 
 }, 10000)
