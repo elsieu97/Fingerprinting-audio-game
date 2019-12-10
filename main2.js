@@ -51,7 +51,7 @@ function getInputVal(id){
 }
 
 //save message to firebase
-function saveMessage(question){
+function saveMessage(question, name){
  var newMessageRef=messageRef.push();
     newMessageRef.set({
         question: question,
