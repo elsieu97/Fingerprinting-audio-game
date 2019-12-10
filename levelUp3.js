@@ -1,5 +1,5 @@
 function every(){
-var answers = {"come on come on"};
+var answers = ["come on come on"];
 var question = document.getElementById("question").value.toLowerCase();
 if(question === ""){
   alert('Nothing was entered');
