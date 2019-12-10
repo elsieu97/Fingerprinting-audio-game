@@ -20,8 +20,6 @@ var messageRef = firebase.database().ref('messages');
 
 //Listen for form submit
 document.getElementById('info').addEventListener('submit', submitForm);
-document.getElementById('score').addEventListener('submit', submitForm);
-document.getElementById('points').addEventListener('submit', submitForm);
 
 //submit question
 function submitForm(e){
@@ -30,11 +28,10 @@ function submitForm(e){
     //get values
     var question= getInputVal('question');
     var name = getInputVal('name');
-   var score = getElementById('score');
-  var points = getElementById('points');
+ 
   
     // save message
-    saveMessage(question, name, score, points);
+    saveMessage(question, name);
   
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -55,13 +52,12 @@ function getInputVal(id){
 }
 
 //save message to firebase
-function saveMessage(question, name, score, points){
+function saveMessage(question, name){
  var newMessageRef=messageRef.push();
     newMessageRef.set({
         question: question,
         name: name,
-      score: score,
-      points:points
+
     });
                                     
 }
