@@ -15,7 +15,7 @@ var audio2 = document.getElementById('audio2');
  audio1.play();
 audio1.currentTime;
  audio2.currentTime;
-audio1.currentTime = 0;
+audio1.currentTime = 6;
  audio2.currentTime = 0;
 audio1.currentTime;
  audio2.currentTime;
