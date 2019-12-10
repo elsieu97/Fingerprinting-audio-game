@@ -99,7 +99,14 @@ label {
   margin-bottom:10px;
   display:none;
 } 
-   
+   .alert2{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+} 
 .previous{
     float: left;
 }
@@ -187,6 +194,7 @@ label {
 
   </div>
         <div class="alert">Your answer has been sent</div>
+   <div class="alert2">correct</div>
  </form>
       </div>
     </div>
@@ -210,7 +218,18 @@ label {
     </div>
   </div>
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.5.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.5.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+	<!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/7.5.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.5.0/firebase-firestore.js"></script>
 <div class="footer">
   <h2>The site used for the audio is below as well as the video link</h2>
   <a href="https://www.pacdv.com/sounds/people_sounds.html">Audio</a><br>
