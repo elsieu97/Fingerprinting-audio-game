@@ -93,7 +93,10 @@ body {
   background: aliceblue;
   margin-top: 20px;
 }
-
+.responsive {
+  width: 100%;
+  height: auto;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -165,7 +168,7 @@ body {
   <div class="rightcolumn">
     <div class="card">
       <h2>Video</h2>
-      <img src="video.png" alt="video" width="250" height="200">
+      <img src="video.png" alt="video" class="responsive" width="250" height="200">
       <p>Below is the link the video</p>
      <a href= "https://firebasestorage.googleapis.com/v0/b/audio2-692f6.appspot.com/o/background.mp4?alt=media&token=4e7040b0-6dec-41de-a9c5-4fd47b082a87">Video<br></a>
       
