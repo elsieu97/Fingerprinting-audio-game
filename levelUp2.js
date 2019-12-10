@@ -15,7 +15,7 @@ score += 200;
 points += 200;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
-    
+    location.replace("https://elsieu97.github.io/Fingerprinting-audio-game/Game2.html");
   }else{
 alert("wrong");
 score -= 150;
