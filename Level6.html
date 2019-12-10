@@ -91,6 +91,15 @@ label {
   display: table;
   clear: both;
 }
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+} 	
+	
 .previous{
     float: left;
 }
@@ -165,26 +174,19 @@ label {
 <button id='pauseaudio' onclick='pauseAudio()'>Pause Video</input>
     </form>
          </div>
-          <!--Javascript files for audio--> 
-                                <script type="text/javascript" src="audio_1.js"></script>
-                                <script type="text/javascript" src="levelUp.js"></script>
-				<script type="text/javascript" src="highscore.js"></script>
-                                <script type="text/javascript" src="answer.js"></script>
-                                <script type="text/javascript" src="score.js"></script>
-                                <script type="text/javascript" src="answer2.js"></script>
-                                <script type="text/javascript" src="highscore2.js"></script>
+    
 			</div>
      <!--Answer box--> 
- <form>
+  <form id="info">
   <div>
-    <label for="answer">Answer: </label>
-    <input type="text" id="answer" name="answer"
-           placeholder="Type in what was said">
+    <label>Answer: </label>
+    <input type="text" id= "question" name="question" placeholder="Type in what was said">
   </div>
-  <div>
-    <button>Submit</button>
+ <div>
+    <button type="submit" onclick="every(event);">Submit</button>
   </div>
-     
+	 <div class="alert"> Your answer has beeen sent</div>
+     </form>
      
            <div>
          <p> <br> </p>
@@ -238,6 +240,11 @@ label {
 <div class="footer">
   <h2>Footer</h2>
 </div>
-
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="audio_1.js"></script>
+	<script type="text/javascript" src="score2.js"></script>
 </body>
 </html>
