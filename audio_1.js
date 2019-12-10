@@ -1,8 +1,9 @@
- (function PlaySoundAndVideo(soundObj1, videoObj) {
+ function PlaySoundAndVideo(soundObj1, videoObj) {
     var soundAndVideo=document.getElementById(soundObj1,videoObj);
   soundAndVideo.play();
-  document.getElementById("audio1").play();
-},6000)
+audio1.currentTime=6;
+  audio1.play();
+}
         function pauseAudio(){
     var audio1 = document.getElementById('audio1');
     var audio2 = document.getElementById('audio2');
