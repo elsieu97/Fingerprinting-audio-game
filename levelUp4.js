@@ -1,5 +1,5 @@
 function every(){
-var answers = ["have a good weekend", "you wanna come in", " you know what im talking", "where are we going", "well talk about it soon", "no thats not going do it", "oh yeah everything is fine", "maybe next time huh", "let me out of here", "ill tell you what i think", "i cant believe i let you", "come on come on"];
+var answers = ["have a good weevgggcgchgkend", "you wghvvanna come in", " you know wgcghfat im talking", "where aryguguye we going", "well talk about it soon", "no thajkkts not going do it", "oh yeah evehvjrything is fine", "maybe next tijiime huh", "levhgvht me out of here", "ill thiuhell you what i think", "i cant belhkjieve i let you", "couihuime on come on"];
 var question = document.getElementById("question").value.toLowerCase();
 if(question === ""){
   alert('Nothing was entered');
