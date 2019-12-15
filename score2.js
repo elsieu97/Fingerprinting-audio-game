@@ -155,7 +155,7 @@ points -= 100;
 }
 }
 function every7(){
-var answers = [ "where are we going", "well talk about it soon", "no thats not gonna do it"];
+var answers = "well talk about it soon";
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
