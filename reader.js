@@ -21,14 +21,14 @@ storageRef.child('audio2/file.txt').getDownloadURL().then(function(url) {
   xhr.send();
 
   // Or inserted into an <button> element:
-  var button = document.getElementById('answer');
+  var button = document.getElementById('question');
   button.src = url;
 }).catch(function(error) {
   // Handle any errors
 });
-var answer = firebase.auth().currentUser.ans;
-return firebase.database().ref('/answer/' + answer).once('value').then(function(snapshot) {
-  var answers = (snapshot.val() && snapshot.val().answers) || 'I dont know';
+var question = firebase.auth().currentUser.ans;
+return firebase.database().ref('/question/' + question).once('value').then(function(snapshot) {
+  var question = (snapshot.val() && snapshot.val().question) || 'I dont know';
   // ...
 });
 
