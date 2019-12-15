@@ -233,6 +233,32 @@ points -= 160;
       }
 }  }
 function every10(){
+var answers = ["where are we going", "Where are we going", "WHERE ARE WE GOING"];
+var question = document.getElementById("question").value.toLowerCase();
+if(question === ""){
+  alert('Nothing was entered');
+  }else{
+  var match = answers.some(function(r){
+  return question === r;
+});
+    var score=120;
+  var points=20;
+  if (match){
+alert("congrats");
+score += 250;
+points += 230;
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("points").innerHTML = points;
+    location.replace("https://elsieu97.github.io/Fingerprinting-audio-game/BonusRound.html");
+  }else{
+alert("wrong");
+score -= 130;
+points -= 160;
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("points").innerHTML = points;
+      }
+}  }
+function every11(){
 var answers = ["you know what im talking", "You know what im talking", "YOU KNOW WHAT IM TALKING"];
 var question = document.getElementById("question").value.toLowerCase();
 if(question === ""){
@@ -249,7 +275,7 @@ score += 2050;
 points += 2390;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
-    location.replace("https://elsieu97.github.io/Fingerprinting-audio-game/BonusRound.html");
+    location.replace("https://elsieu97.github.io/Fingerprinting-audio-game/Finished.html");
   }else{
 alert("wrong");
 score -= 730;
