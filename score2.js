@@ -1,5 +1,5 @@
 function every(){
-var answers = ["have a good weekend", "let meth ouassdt of here", "ill tell you tggtwhat i think"];
+var answers = "have a good weekend";
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -25,7 +25,7 @@ points -= 100;
 }
 }
 function every2(){
-var answers = ["ill tell yofdfu what i think", "i cant besfdslieve i let you", "come on come on"];
+var answers = "come on come on";
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -37,13 +37,13 @@ var match = answers.some(function(r){
   var points=0;
   if (match){
 alert("congrats");
-score += 200;
+score += 250;
 points += 200;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
   }else{
 alert("wrong");
-score -= 100;
+score -= 150;
 points -= 100;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
