@@ -1,5 +1,6 @@
  function PlaySoundAndVideo(soundObj1, soundObj2,videoObj) {
     var soundAndVideo=document.getElementById(soundObj1,soundObj2,videoObj);
+  setTimeout(soundObj2, 6000);
   soundAndVideo.play();
 }
     function pauseAudio(){
