@@ -1,5 +1,5 @@
- function PlaySoundAndVideo(soundObj1,soundObj2,videoObj) {
-    var soundAndVideo=document.getElementById(soundObj1,soundObj2,videoObj);
+ function PlaySoundAndVideo(soundObj1,videoObj) {
+    var soundAndVideo=document.getElementById(soundObj1,videoObj);
   soundAndVideo.play();
 }
     function pauseAudio(){
