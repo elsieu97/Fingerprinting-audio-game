@@ -70,7 +70,7 @@ points += 200;
   }else{
 alert("wrong");
 score -= 100;
-points -= 100;
+points -= 150;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
       }
@@ -174,6 +174,32 @@ points += 200;
   }else{
 alert("wrong");
 score -= 100;
+points -= 100;
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("points").innerHTML = points;
+      }
+}
+}
+function every8(){
+var answers = "where are we going";
+var question = document.getElementById("question").value.toLowerCase();
+  if(question === ""){
+  alert('Nothing was entered');
+  }else{
+var match = answers.some(function(r){
+  return question === r;
+});
+  var score=100;
+  var points=0;
+  if (match){
+alert("congrats");
+score += 300;
+points += 200;
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("points").innerHTML = points;
+  }else{
+alert("wrong");
+score -= 170;
 points -= 100;
     document.getElementById("score").innerHTML = score;
     document.getElementById("points").innerHTML = points;
