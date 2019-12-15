@@ -103,7 +103,7 @@ points -= 100;
 }
 }
 function every5(){
-var answers = [ "no thats not gonna do it", "oh yeah everything is fine", "maybe next time huh"];
+var answers = "no thats not gonna do it";
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
