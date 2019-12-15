@@ -51,7 +51,7 @@ points -= 150;
       }
 }  }
 function every3(){
-var answers = ["well talk about it", "Well talk about it," "WELL TALK ABOUT IT"];
+var answers = ["well talk about it", "Well talk about it", "WELL TALK ABOUT IT"];
 var question = document.getElementById("question").value.toLowerCase();
 if(question === ""){
   alert('Nothing was entered');
