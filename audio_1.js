@@ -21,6 +21,6 @@ audio1.currentTime;
  audio2.currentTime;
 }
 
-setTimeout(function(){ 
+/*setTimeout(function(){ 
 document.getElementById("audio1").play(); 
-}, 5000)
+}, 5000)*/
