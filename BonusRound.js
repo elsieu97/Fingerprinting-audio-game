@@ -1,5 +1,5 @@
 function every(){
-var answers = [ " you know what im talking", "ill tebkjll you what i think", "i cant behuhulieve i let you"];
+var answers = [ " you know what im talking", "You know what im talking", "YOU KNOW WHAT IM TALKING"];
 var question = document.getElementById("question").value.toLowerCase();
 if(question === ""){
   alert('Nothing was entered');
