@@ -25,7 +25,7 @@ points -= 100;
 }
 }
 function every2(){
-var answers = "come on come on";
+var answers = ["come on come on", "Come on come on", "COME ON COME ON"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -51,7 +51,7 @@ points -= 100;
 }
 }
 function every3(){
-var answers = "maybe next time huh";
+var answers = ["maybe next time huh", "Maybe next time huh", "MAYBE NEXT TIME HUH"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -77,7 +77,7 @@ points -= 150;
 }
 }
 function every4(){
-var answers = "i cant believe i let you";
+var answers = ["i cant believe i let you", "I cant believe i let you", "I CANT BELIEVE I LET YOU"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -103,7 +103,7 @@ points -= 100;
 }
 }
 function every5(){
-var answers = "no thats not gonna do it";
+var answers = ["no thats not gonna do it", "No thats not gonna do it", "NO THATS NOT GONNA DO IT"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -129,7 +129,7 @@ points -= 150;
 }
 }
 function every6(){
-var answers = "oh yeah everything is fine";
+var answers = ["oh yeah everything is fine", "Oh yeah everything is fine", "OH YEAH EVERYTHING IS FINE"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -155,7 +155,7 @@ points -= 100;
 }
 }
 function every7(){
-var answers = "well talk about it soon";
+var answers = ["well talk about it soon", "Well talk about it soon", "WELL TALK ABOUT IT SOON"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -181,7 +181,7 @@ points -= 100;
 }
 }
 function every8(){
-var answers = "where are we going";
+var answers = ["where are we going", "Where are we going", "WHERE ARE WE GOING"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -207,7 +207,7 @@ points -= 100;
 }
 }
 function every9(){
-var answers = "you wanna come in";
+var answers = ["you wanna come in", "You wanna come in", "YOU WANNA COME IN"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
@@ -233,7 +233,7 @@ points -= 100;
 }
 }
 function every10(){
-var answers = "let me out of here";
+var answers = ["let me out of here", "Let me out of here", "LET ME OUT OF HERE"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
   alert('Nothing was entered');
