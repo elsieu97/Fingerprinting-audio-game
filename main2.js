@@ -15,7 +15,7 @@
 firebase.auth();
 
 //reference messages collection
-var messageRef = firebase.database().ref('messages');
+var messageRef = firebase.database().ref('messages2');
 
 //Listen for form submit
 document.getElementById('info').addEventListener('submit', submitForm);
