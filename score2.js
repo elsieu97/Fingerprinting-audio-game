@@ -76,7 +76,7 @@ points -= 150;
       }
 }
 }
-function every4(){O
+function every4(){
 var answers = ["i cant believe i let you talk me into this", "I cant believe i let you talk me into this", "I CANT BELIEVE I LET YOU TALK ME INTO THIS"];
 var question = document.getElementById("question").value.toLowerCase();
   if(question === ""){
